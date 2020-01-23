@@ -9,11 +9,10 @@
 import Foundation
 
 
-struct Images: Decodable {
+struct Images: Codable {
     let hits: [ImageInfo]
 }
 
-struct ImageInfo: Decodable {
+struct ImageInfo: Codable {
     let largeImageUrl: String
-    let likes: Int
 }
